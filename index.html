@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Head-Tail</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="js-head-tails.js"></script>
+  </head>
+  <body>
+    <p class="heading">Head Tails</p>
+    <button onclick="
+     playgame('heads')" class="heads-button">
+      <img src="images/heads.jpeg" class="heads">
+    </button>
+
+    <button onclick="
+     playgame('tails')" class="tails-button">
+      <img src="images/tails.jpeg" class="tails">
+    </button>
+
+    <p class="js-display"></p>
+
+    <p class="js-score">
+      Win:0  Lose:0
+    </p>
+
+    <button onclick="
+    if(!(score.lose===0&&score.win===0))
+    score.lose=0
+    score.win=0
+    localStorage.removeItem('score')
+    scores()"
+    class="reset"
+    >
+      Restart
+    </button>
+
+    
+  </body>
+
+</html>
+
+
